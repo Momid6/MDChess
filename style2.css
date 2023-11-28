@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo {
+  max-width: 150px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.dropbtn::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #c8b599;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.dropbtn:hover::after {
+  width: 100%;
+}
+
+.dropdown-content ul li:hover {
+  font-weight: bolder;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  min-width: 200px;
+  z-index: 1;
+  margin: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 17px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.dropdown-content a:before {
+  background-image: url(../Images/Bullet\ Point.png);
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 19px;
+  height: 15px;
+  content: "";
+}
+
+.dropdown-content a:hover {
+  background-color: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #c8b599;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  background: #c8b599;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: 2px solid RGBA(0, 0, 0, 0.6);
+}
+
+footer {
+  width: 99.25%;
+  position: relative;
+  bottom: 0px;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 5px;
+  border-top-left-radius: 0px;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.Logo1 {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.col ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.col ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline dir {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.footer-ul {
+  font-size: 14px;
+  margin-top: 38px;
+}
+
+.button-up {
+  background: #c8b599;
+  border: none;
+  border-radius: 30px;
+  box-shadow: none;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 99.25%;
+}
+
+.button-up:hover {
+  border: none;
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
+  animation: 3s linear 1s infinite running slidebg;
+}
+
+.button-up:active {
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+.Title {
+  font-size: 70px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}
+.Subtitle {
+  color: #fff;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+.table {
+  table-layout: fixed;
+}
+
+.table td {
+  height: 250px;
+  overflow: hidden;
+}
+
+.table table {
+  overflow: hidden;
+  width: 85%;
+  text-align: center;
+  height: 20px;
+  border: black;
+}
+
+th {
+  color: white;
+}
+
+.table-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.nationalityimg img {
+  height: 100%;
+  width: 100%;
+}
+
+td {
+  background: white;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../Images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hr1 {
+  width: 50%;
+}
+
+.hyperlink a {
+  text-decoration: none;
+  color: white;
+}
